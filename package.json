@@ -19,7 +19,7 @@
   "homepage": "https://github.com/adriangersbach/nodejs-iiotrestapi-test1#readme",
   "dependencies": {
     "request": "^2.88.0",
-    "request-promise": "^4.2.2"
+    "request-promise": "^4.2.4"
   },
   "devDependencies": {
     "chai": "^4.2.0",

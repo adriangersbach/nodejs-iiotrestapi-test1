@@ -20,10 +20,8 @@ const urls = [
   `${host}/v1/instrumentations?per_page=1`
 ];
 
-module.exports = {
-  appName: function(){
-    return "iiotrestapi";
-  }
+exports.AppName = (version) => {
+    return `iiotrestapi-${version}`;
 }
 
 function getEdgeDevices()
