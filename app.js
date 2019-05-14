@@ -24,6 +24,24 @@ exports.AppName = (version) => {
     return `iiotrestapi-${version}`;
 }
 
+exports.SoftwareVersionAdapterPost = (versionName, status, type) => {
+  return request({
+    method:'POST',
+    url: `https://iiot.com/v1/edm/software_versions`,
+    headers: {
+
+    },
+    body: {
+      version_name: versionName,
+      status: {
+        id: status
+      },
+      edge_device_type: {
+        id: type
+      }
+    }, json: true});
+};
+
 function getEdgeDevices()
 {
   const urls = [
